@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Opyt',
+  title: 'Opyt | A melhor internet fibra óptica',
   description: 'A melhor internet fibra óptica',
 }
 
