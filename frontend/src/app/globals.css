@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+@layer base {
+  html {
+    font-family: 'Arial';
+  }
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #E6E6E6;
+}
+body > main {
+  border-top: 0.8125rem solid #1B1B1A; 
+}
+
+.container {
+  max-width: 960px;
+}
+
+.form-div {
+  padding: 3.75rem;
+}
+.form-div h2 {
+  font-size: 1.75rem;
+  padding: 0 1rem;
+}
+.btn-cadastrar {
+  padding: 0.58rem 3.2264rem 0.67rem 3.7306rem;
+  border-radius: 2.1875rem;
+  background: #F8971F;
+  color: #fff;
+}
+.btn-whatsapp {
+  padding: 0.7137rem 3.9044rem 0.7238rem 3.925rem;
+  border-radius: 2.1875rem;
+  background: #25D366;
+  color: #fff;
+}
+.btn-whatsapp-block {
+  padding: 0.7137rem 3.9044rem 0.7238rem 3.925rem;
+  border-radius: 0.25rem;
+  background: #25D366;
+  color: #fff;
+}
+.gr-features {
+  border-top: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
+  background: #151515;
+  padding: 2.125rem 0;
+}
+.gr-features h2 {
+  font-size: 34px;
+}
