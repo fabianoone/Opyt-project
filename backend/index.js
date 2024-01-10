@@ -32,6 +32,15 @@ app.post('/api/leads', async (req, res) => {
     }
 });
 
+app.get('/api/leads', async (req, res) => {
+    try {
+        const response = await prisma.lead.findMany();
+        res.json({ data: response });
+    } catch (error) {
+        res.status(500).json({ error: 'Erro ao buscar dados.', error });
+    }
+});
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
     console.log(`O servidor está sendo executado em http://localhost:${PORT}`);
