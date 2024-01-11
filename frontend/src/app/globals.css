@@ -32,9 +32,6 @@ body > main {
   max-width: 960px;
 }
 
-.form-div {
-  padding: 3.75rem;
-}
 .form-div h2 {
   font-size: 1.75rem;
   padding: 0 1rem;
@@ -63,6 +60,9 @@ body > main {
   background: #151515;
   padding: 2.125rem 0;
 }
-.gr-features h2 {
-  font-size: 34px;
+
+@media (min-width: 768px) {
+  .form-div {
+    padding: 3.75rem;
+  }
 }
