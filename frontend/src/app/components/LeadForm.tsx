@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import Calculate from "./Calculate";
 
 export default function LeadForm() {
     const router = useRouter();
@@ -85,11 +86,7 @@ export default function LeadForm() {
                         type="text" name="city" id="city" placeholder="Digite sua cidade..." required
                     />
                     
-                    <label htmlFor="verification" className="block mb-2 text-sm font-bold text-gray-900 dark:text-white mt-3">10 + 2 = ?</label>
-                    <input 
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
-                        type="text" name="verification" id="verification" required
-                    />
+                    <Calculate />
 
                     {submissionMessage && (
                             <div
