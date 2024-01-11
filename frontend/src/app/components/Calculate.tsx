@@ -34,7 +34,7 @@ export default function Calculate() {
 			if (!isNaN(userAnswer) && userAnswer === correctAnswer) {
 				setResultMessage('Correto! Muito bem!');
 				setCalculation(generateCalculation());
-				setUserInput('');
+				// setUserInput('');
 			} else {
 				setResultMessage('Incorreto. Tente novamente.');
 			}
